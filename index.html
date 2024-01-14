@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Library</title>
+
+		<script
+			src="https://kit.fontawesome.com/1387792aac.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<header class="header">
+				<h1 class="title">Book library</h1>
+				<p class="description">
+					Here you can manage the books you borrow and want to read. This is
+					your library profile.
+				</p>
+			</header>
+
+			<form action="" class="book-form">
+				<div class="book-content">
+					<div class="book-manage">
+						<label for="title" class="book-label">Book title</label>
+						<input type="text" name="title" class="book-input book-title" />
+					</div>
+					<div class="book-manage">
+						<label for="author" class="book-label">Author</label>
+						<input type="text" name="author" class="book-input book-author" />
+					</div>
+					<div class="book-manage">
+						<label for="pages" class="book-label">Pages</label>
+						<input type="number" name="pages" class="book-input book-pages" />
+					</div>
+					<div class="book-manage">
+						<label for="status" class="book-label">Status</label>
+						<select name="status" id="status" class="book-status">
+							<option value="read">Read</option>
+							<option value="unread">Unread</option>
+						</select>
+					</div>
+				</div>
+				<button class="submit">Submit</button>
+			</form>
+
+			<div class="library-content">
+				<div class="library-table">
+                   
+					<p class="library-text">Title</p>
+					<p class="library-text">Author</p>
+					<p class="library-text">Pages</p>
+					<p class="library-text">Status</p>
+				</div>
+				<div class="library-list">
+					<div class="library-item">
+						<p>Lord of the Rings Return of the king</p>
+						<p>J.R.R. Tolkien</p>
+                        <p>222</p>
+						<button class="library-item-btn read-btn">Read</button>
+						<button class="library-item-btn remove-btn">x</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./library.js"></script>
+	</body>
+</html>
